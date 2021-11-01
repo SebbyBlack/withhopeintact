@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-bottom: 1px solid white;
+    height: 50px;
+    width: 100%;
+
+    display: none;
+}
+
+nav a {
+    padding: 1%;
+}
+
+
+/* classes styling */
+.ctaPic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ctaPic img {
+    height: 50vw;
+    width: 50vw;
+}
+
+.ctaPic p {
+    color: white;
+    font-size: 72;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 1%;
+    margin-top: -4%;
+    margin-right: -80%;
+}
+
+.ctaPic p:hover {
+    background-color: darkgray;
+    color: darkred;
+    border-color: black;
+}
