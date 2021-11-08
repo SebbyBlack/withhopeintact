@@ -37,9 +37,9 @@ nav a {
     font-size: 72;
     border: 1px solid white;
     border-radius: 20px;
-    padding: 1%;
-    margin-top: -4%;
-    margin-right: -80%;
+    padding: .5%;
+    margin-top: -3%;
+    margin-right: -85%;
 }
 
 .ctaPic p:hover {
