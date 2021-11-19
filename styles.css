@@ -113,3 +113,26 @@ footer a:hover {
     align-items: center;
     width: 80%;
 }
+
+.lastScrollButton {
+    color: white;
+    background-color: black;
+    font-size: 72;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: .5%;
+    padding-top: 10px;
+    width: 30px;
+    height: 25px;
+    text-decoration: none;
+    text-align: center;
+    text-justify: center;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.lastScrollButton:hover {
+    background-color: darkgray;
+    color: darkred;
+    border-color: black;
+}
