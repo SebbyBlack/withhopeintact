@@ -22,15 +22,21 @@
         <!-- Main Picture / WHI Logo / Call To Action -->
         <div class="ctaPic">
             <img src="pictures/LOGO3.png" />
-            <p> V </p>
+            <a href="#epkp"> V </a>
         </div>
 
         <!-- EPK Section / Promo Pic -->
 
-        <img src="#">
+        
 
         <section class="epk"> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <img src="pictures/groupphoto.jpg" class="groupPhoto">
+            
+            <p id="epkp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Neque illo nostrum distinctio voluptatibus est ut error illum perferendis? Optio, vitae. Tenetur, 
+                ea fugiat corrupti temporibus saepe modi ab ipsum minima.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Neque illo nostrum distinctio voluptatibus est ut error illum perferendis? Optio, vitae. Tenetur, 
                 ea fugiat corrupti temporibus saepe modi ab ipsum minima.
             </p>
@@ -42,9 +48,35 @@
         <a> Spotify </a>
         <a> Instagram </a>
 
+        <section class="socialLinks">
+            <iframe 
+                width="560" height="315" src="https://www.youtube.com/embed/3jemAaxJixM" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
+            <div class="socialButtons">
+                <a> Facebook </a>
+                <a> Youtube </a>
+                <a> Spotify </a>
+                <a> Instagram </a>
+            </div>
+        </section>
+
         
 
 
 
+        <script>
+            document.querySelectorAll('a[href^="#epkp"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+        </script>
     </body>
 </html>

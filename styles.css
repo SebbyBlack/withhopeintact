@@ -32,18 +32,46 @@ nav a {
     width: 50vw;
 }
 
-.ctaPic p {
+.ctaPic a {
     color: white;
+    background-color: black;
     font-size: 72;
     border: 1px solid white;
     border-radius: 20px;
     padding: .5%;
     margin-top: -3%;
     margin-right: -85%;
+    text-decoration: none;
 }
 
-.ctaPic p:hover {
+.ctaPic a:hover {
     background-color: darkgray;
     color: darkred;
     border-color: black;
+}
+
+.epk {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.groupPhoto {
+    width: 80%;
+    
+}
+
+.epk p {
+    color: white;
+    font-size: 48px;
+    width: 80%;
+    text-align: center;
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
