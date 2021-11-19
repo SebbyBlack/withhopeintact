@@ -22,7 +22,7 @@
         <!-- Main Picture / WHI Logo / Call To Action -->
         <div class="ctaPic">
             <img src="pictures/LOGO3.png" />
-            <a href="#epkp"> V </a>
+            <a href="#groupPhotoId" class="scrollButton"> V </a>
         </div>
 
         <!-- EPK Section / Promo Pic -->
@@ -30,7 +30,8 @@
         
 
         <section class="epk"> 
-            <img src="pictures/groupphoto.jpg" class="groupPhoto">
+            <img src="pictures/groupphoto.jpg" class="groupPhoto" id="groupPhotoId">
+            <a href="#epkp" class="scrollButton" style="margin-top: -75px; margin-left: 50px;"> V </a>
             
             <p id="epkp">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -49,34 +50,78 @@
         <a> Instagram </a>
 
         <section class="socialLinks">
+            <a href="#socialButtons" class="scrollButton"> V </a>
             <iframe 
-                width="560" height="315" src="https://www.youtube.com/embed/3jemAaxJixM" 
+                width="60%" height="550px" src="https://www.youtube.com/embed/3jemAaxJixM" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
                 clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen></iframe>
+            
 
-            <div class="socialButtons">
-                <a> Facebook </a>
-                <a> Youtube </a>
-                <a> Spotify </a>
-                <a> Instagram </a>
-            </div>
+            <div class="socialButtons" id="socialButtons">
+                <a href="#" target="_blank"> <img src="pictures/facebook_icon.png" /> </a>
+                <a href="#" target="_blank"> <img src="pictures/instagram_icon.png" /> </a>
+                <a href="#" target="_blank"> <img src="pictures/spotify_icon.png" /> </a>
+                <a href="#" target="_blank"> <img src="pictures/youtube_icon.png" /></a>
+                </div>
         </section>
+
+        <footer id="contact">
+                
+            <div class="footWrap">
+            <p> 
+                With Hope Intact <br> 2021 <br>
+                
+            </p>
+
+            
+
+            <p> 
+                Booking Email :  <br>
+                Press Email :  <br>
+                Phone :  <br>
+
+            </p>
+            </div>
+        </footer>
 
         
 
 
 
         <script>
-            document.querySelectorAll('a[href^="#epkp"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+            document.querySelectorAll('a[href^="#groupPhotoId"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+
+            document.querySelectorAll('a[href^="#epkp"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            }); 
+
+            document.querySelectorAll('a[href^="#socialButtons"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            }); 
         </script>
     </body>
 </html>

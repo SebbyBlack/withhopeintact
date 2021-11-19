@@ -26,13 +26,14 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 250px;
 }
 .ctaPic img {
     height: 50vw;
     width: 50vw;
 }
 
-.ctaPic a {
+.scrollButton {
     color: white;
     background-color: black;
     font-size: 72;
@@ -74,4 +75,41 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.socialButtons {
+    display: flex;
+    flex-direction: row;
+
+    margin: 3% 0%;
+    
+}
+
+footer {
+    
+    
+    background-color: black; 
+    height: 100px;
+    width: 90%;
+    border-top: 1px solid red;
+    color: white;
+    padding: 0 5%;
+    
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: red;
+}
+
+.footWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
 }
